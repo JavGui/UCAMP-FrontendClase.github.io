@@ -1,38 +1,204 @@
-.App {
+.App{
+  margin-top: 20px;
+}
+.captura{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input, label{
+  font-size: larger;
+  font-weight: bold;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.entradas{
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  margin: auto;
+  width: 30%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.entrada1, .entrada2, .entrada3{
+  /* border: 2px solid red; */
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  text-align: center;
+}
+
+.entrada2, .entrada3{
+  margin-left: 10px;
+}
+
+.input1, .input2{
+  width: 350px;
+}
+
+.botones{
+  display: flex;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
+.buscaVisible{
+  visibility: visible;
+  background-color: #0c6cfc; 
+  width: 125px;
+  color: white;
+  font-weight: bold;
+  font-size: larger;
+  padding: 5px 20px;
+}
+
+.agregaVisible{
+  visibility: visible;
+  background-color: green;
+  margin-left: 20px;
+  width: 125px;
+  color: white;
+  font-weight: bold;
+  font-size: larger;
+  padding: 5px 20px;
+}
+
+.buscaOculto{
+  visibility: hidden;
+  background-color: #0c6cfc;
+  width: 125px;
+  color: white;
+  font-weight: bold;
+  font-size: larger;
+  padding: 5px 20px;
+}
+
+.agregaOculto{
+  visibility: hidden;
+  background-color: green;
+  margin-left: 20px;
+  width: 125px;
+  color: white;
+  font-weight: bold;
+  font-size: larger;
+  padding: 5px 20px;
+}
+
+.limpia{
+  background-color: white;
+  margin-left: 10px;
+  padding: 0px 0px;
+  text-align: center;
+  color: black;
+  font-size: larger;
+  font-weight: bold;
+  width: 35px;
+  height: 27px;
+} 
+
+.cambia{
+  background-color: grey;
+  font-size: small;
+  width: 40px;
+  height: 20px;
+  text-align: center;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.borra{
+  background-color: red;
+  font-size: small;
+  width: 40px;
+  height: 20px;
+  text-align: center;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.modificaOculto{
+  visibility: hidden;
+  background-color: gray;
+  margin-left: -190px;
+  width: 125px;
+  color: white;
+  font-weight: bold;
+  font-size: larger;
+  padding: 5px 20px;
+}
+
+.modificaVisible{
+  visibility: visible;
+  background-color: gray;
+  margin-left: -190px;
+  width: 125px;
+  color: white;
+  font-weight: bold;
+  font-size: larger;
+  padding: 5px 20px;
+}
+
+.texto{
+  border: 2px solid gray;
+  margin: auto;
+  width: 60%;
+  height: 10px;
+  margin-top: 30px;
+  color: red;
+  font-size: larger;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+h2{
+  text-align: center;
+  color: blue;
+  justify-content: center;
+}
+
+.container{
+  border: 2px solid gray;  
+  height: 430px;
+  width: 67.5%;
+  margin: auto;
+  overflow-y: scroll;
+}
+
+thead {
+  top: 0;
+  position: sticky;  
+}
+
+.table-header {
+  background-color: #0c6cfc;
+  color: white;
+}
+
+.col {
+  border: 2px solid black;
+  text-align: center;
+  padding: 10px;
+}
+
+.det{
+  border: 1px solid black;
+  text-align: center;
+  font-weight: bold;
+  color: blue;
+}
+
+.col1, .col4, .col5{
+  width: 60px;
+}
+.col2{
+  width: 300px;
+}
+.col3{
+  width: 400px;
+}
+
+tr:hover{
+  background-color: rgba(128, 128, 128, 0.463); 
 }
